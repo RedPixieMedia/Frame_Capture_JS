@@ -8,39 +8,50 @@
 		<script type="text/javascript" src="Scripts.js"></script>
 		<script type="text/javascript" src="../Frame_Capture_Min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 	<body>
-
-
-
-
-
-
-<div class="FC">
-	<div class="FC-Title-Div">
-		<h1 class="FC-Title">Frame Capture JS - Red Pixie Media</h1>
-		<IMG class="FC-Title-IMG" src="Assets/Logo.png">
-	</div>
-	<div class="FC-Side">
-		<video class="FC-Video" controls>
-			<source type="video/mp4" src="Assets/Zugfahrt_Train_Ride.mp4">
-		</video>
-	</div><!--
- --><div class="FC-Side">
- 		<IMG class="FC-Display" src="Assets/Missing.png" />
- 		<div class="Spinner"></div>
- 	</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
+		<div class="FC">
+			<div class="FC-Title-Div">
+				<h1 class="FC-Title">Frame Capture JS - Red Pixie Media</h1>
+				<a class="FC-Title-Link" target="_blank" href="https://redpixiemedia.com">
+					<IMG class="FC-Title-IMG" src="Assets/Logo.png">
+				</a>
+			</div>
+			<div class="FC-Side">
+				<video class="FC-Video">
+					<source id="Video-Src" type="video/mp4" src="Assets/Zugfahrt_Train_Ride.mp4">
+				</video>
+			</div><!--
+		 --><div class="FC-Side">
+				<IMG class="FC-Display" src="Assets/Missing.png" />
+				<div class="Spinner"></div>
+			</div>
+			<div class="FC-Controls">
+				<div class="FC-Button FC-Little-Button FC-Pause">
+					<i class="FC-Icon material-icons">play_arrow</i>
+				</div>
+				<div class="FC-Button FC-Big-Button FC-Seek">
+					<div class="FC-Seek-Display">00:00:00</div>
+					<div class="FC-Seek-Slider">
+						<div class="FC-Seek-Slider-Bar"></div>
+						<div class="FC-Seek-Slider-Area"></div>
+					</div>
+				</div>
+				<div class="FC-Button FC-Little-Button FC-Mute">
+					<i class="FC-Icon material-icons">volume_up</i>
+				</div>
+				<div class="FC-Button FC-Big-Button FC-Upload">
+					<div class="FC-Upload-Text">Upload</div>
+					<input class="FC-Upload-Input" type="file"/>
+				</div>
+				<select class="FC-Button FC-Big-Button FC-Ext">
+					<option class="FC-Ext-Option" value="jpeg" selected>Ext: JPG</option>
+					<option class="FC-Ext-Option" value="png">Ext: PNG</option>
+					<option class="FC-Ext-Option" value="bmp">Ext: BMP</option>
+				</select>
+				<div class="FC-Button FC-Big-Button FC-Save">Save</div>
+			</div>
+		</div>
 	</body>
 </html>

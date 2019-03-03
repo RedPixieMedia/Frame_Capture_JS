@@ -1,7 +1,7 @@
 /*	
  *	Package: Frame Capture JS
  *	Author: Sunshine (Red Pixie Media)
- *	Description: Ca
+ *	Description: Capture Individual Frames From Videos
  *	Usage: frameCapture(src, pos, ext, callback)
  *		src = (String) - video file (Any browser supported video format)
  *		pos = (Number) - seeking position
@@ -17,8 +17,8 @@ function frameCapture(src, pos, ext, callback) {
 	var canvas = document.createElement("canvas");
 	var context = canvas.getContext("2d");
 	video.src = src;
-	video.style.opacity = 0;
-	canvas.style.opacity = 0;
+	video.style.display = "none";
+	canvas.style.display = "none";
 	document.body.appendChild(video);
 	document.body.appendChild(canvas);
 	video.addEventListener("loadedmetadata", function() {
